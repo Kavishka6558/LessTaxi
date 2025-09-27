@@ -1,7 +1,8 @@
-# LessTaxi
+
 # LessTaxi
 
-<img width="1756" height="921" alt="readme" src="https://github.com/user-attachments/assets/161fee6d-d743-40b2-bee5-af22b9ecd158" />
+<img width="1756" height="921" alt="readme 2" src="https://github.com/user-attachments/assets/4d249cfa-3189-48ce-a9c6-ca2e8e7b8ff2" />
+
 
 A modern, responsive travel website template featuring:
 - Hero banner with promotional section
