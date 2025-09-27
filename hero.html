@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramayana Trail - Sacred Journey Through Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="lotus-loader"></div>
+            <p>Loading Sacred Journey...</p>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-elements">
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="image/Logo.png" alt="LessTaxi Logo" class="logo-image">
+                </div>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <div class="nav-item active">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Ramayana Trail</span>
+                    <div class="trending-badge">TRENDING</div>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-taxi"></i>
+                    <span>Taxis</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-hiking"></i>
+                    <span>Activities</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Tours</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-star"></i>
+                    <span>Destinations</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Deals</span>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <button class="book-now-btn">
+                    <i class="fas fa-calendar-check"></i>
+                    Book Now
+                </button>
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge animate-slide-up">
+                <i class="fas fa-om"></i>
+                <span>Sacred Journey</span>
+                <div class="badge-glow"></div>
+            </div>
+            
+            <h1 class="hero-title animate-slide-up" style="animation-delay: 0.2s;">
+                <span class="title-line">Discover the</span>
+                <span class="title-line accent-gradient">Ramayana Trail</span>
+                <span class="title-subtitle">6 Days of Spiritual Adventure</span>
+            </h1>
+            
+            <p class="hero-description animate-slide-up" style="animation-delay: 0.4s;">
+                Embark on a mystical journey following Lord Rama and Sita's legendary path across the pearl island of Sri Lanka. Experience ancient temples, sacred caves, and breathtaking landscapes with our expert guides.
+            </p>
+            
+            <div class="hero-actions animate-slide-up" style="animation-delay: 0.6s;">
+                <button class="hero-cta-primary">
+                    <span>Start Your Journey</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="hero-stats animate-slide-up" style="animation-delay: 0.8s;">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Sacred Sites</span>
+                    </div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Days</span>
+                    </div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">30K+</span>
+                        <span class="stat-label">Travelers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Journey Timeline -->
+        <section class="timeline-section">
+            <div class="section-header">
+                <h2 class="section-title">Sacred Journey Timeline</h2>
+                <p class="section-subtitle">Follow the divine path through Sri Lanka's most sacred locations</p>
+            </div>
+            
+            <div class="timeline-layout">
+                <!-- Vertical Timeline -->
+                <div class="vertical-timeline">
+                    <div class="timeline-track-vertical">
+                        <div class="timeline-progress-vertical" id="timelineProgressVertical"></div>
+                    </div>
+                    
+                    <div class="timeline-points-vertical">
+                        <div class="timeline-point-vertical start-point" data-location="Airport" data-day="Start">
+                            <div class="point-icon"><i class="fas fa-plane"></i></div>
+                            <div class="point-info">
+                                <div class="point-label">Airport</div>
+                                <div class="point-day">Start</div>
+                            </div>
+                        </div>
+                        <div class="timeline-point-vertical" data-location="Chilaw" data-day="Day 1">
+                            <div class="point-icon"><i class="fas fa-temple-hindu"></i></div>
+                            <div class="point-info">
+                                <div class="point-label">Chilaw</div>
+                                <div class="point-day">Day 1</div>
+                            </div>
+                        </div>
+                        <div class="timeline-point-vertical" data-location="Dambulla" data-day="Day 1">
+                            <div class="point-icon"><i class="fas fa-mountain"></i></div>
+                            <div class="point-info">
+                                <div class="point-label">Dambulla</div>
+                                <div class="point-day">Day 1</div>
+                            </div>
+                        </div>
+                        <div class="timeline-point-vertical" data-location="Trincomalee" data-day="Day 2">
+                            <div class="point-icon"><i class="fas fa-water"></i></div>
+                            <div class="point-info">
+                                <div class="point-label">Trincomalee</div>
+                                <div class="point-day">Day 2</div>
+                            </div>
+                        </div>
+                        <div class="timeline-point-vertical" data-location="Nuwara Eliya" data-day="Day 3">
+                            <div class="point-icon"><i class="fas fa-leaf"></i></div>
+                            <div class="point-info">
+                                <div class="point-label">Nuwara Eliya</div>
+                                <div class="point-day">Day 3</div>
+                            </div>
+                        </div>
+                        <div class="timeline-point-vertical active-point" data-location="Ella" data-day="Day 4">
+                            <div class="point-icon"><i class="fas fa-mountain-sun"></i></div>
+                            <div class="point-info">
+                                <div class="point-label">Ella</div>
+                                <div class="point-day">Day 4</div>
+                            </div>
+                        </div>
+                        <div class="timeline-point-vertical" data-location="Colombo" data-day="Day 5">
+                            <div class="point-icon"><i class="fas fa-city"></i></div>
+                            <div class="point-info">
+                                <div class="point-label">Colombo</div>
+                                <div class="point-day">Day 5</div>
+                            </div>
+                        </div>
+                        <div class="timeline-point-vertical end-point" data-location="Airport" data-day="End">
+                            <div class="point-icon"><i class="fas fa-plane-departure"></i></div>
+                            <div class="point-info">
+                                <div class="point-label">Departure</div>
+                                <div class="point-day">End</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Detail Card -->
+                <div class="timeline-detail-card glass-card">
+                    <div class="card-header">
+                        <div class="destination-badge">Current Stop</div>
+                        <div class="destination-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-visual">
+                        <div class="destination-image">
+                            <img src="image/ella.jpg" alt="Ella">
+                            <div class="image-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="image-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+
+                    <div class="destination-info">
+                        <h3 class="destination-name">Ella</h3>
+                        <p class="destination-tagline">Mountain Town of Ravana's Cave</p>
+                        <p class="destination-description">
+                            Nestled in the misty mountains, Ella offers breathtaking panoramic views and houses the legendary Ravana's Cave, believed to be where Sita was held captive. The sacred Ravana Ella Falls cascade nearby, creating a mystical atmosphere perfect for spiritual reflection.
+                        </p>
+                        
+                        <div class="destination-features">
+                            <div class="feature">
+                                <i class="fas fa-mountain"></i>
+                                <span>Mountain Views</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cave"></i>
+                                <span>Sacred Cave</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-waterfall"></i>
+                                <span>Divine Falls</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Destination -->
+        <section class="current-destination" style="display: none;">
+            <div class="destination-card glass-card">
+                <div class="card-header">
+                    <div class="destination-badge">Current Stop</div>
+                    <div class="destination-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="destination-visual">
+                    <div class="destination-image">
+                        <div class="image-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="image-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+
+                <div class="destination-info">
+                    <h3 class="destination-name">Ella</h3>
+                    <p class="destination-tagline">Mountain Town of Ravana's Cave</p>
+                    <p class="destination-description">
+                        Nestled in the misty mountains, Ella offers breathtaking panoramic views and houses the legendary Ravana's Cave, believed to be where Sita was held captive. The sacred Ravana Ella Falls cascade nearby, creating a mystical atmosphere perfect for spiritual reflection.
+                    </p>
+                    
+                    <div class="destination-features">
+                        <div class="feature">
+                            <i class="fas fa-mountain"></i>
+                            <span>Mountain Views</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-cave"></i>
+                            <span>Sacred Cave</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-waterfall"></i>
+                            <span>Divine Falls</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Overview -->
+        <section class="journey-overview">
+            <div class="section-header">
+                <h2 class="section-title">Complete Journey</h2>
+                <div class="view-toggle">
+                    <button class="toggle-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="toggle-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="journey-grid" id="journeyGrid">
+                <div class="journey-item" data-day="1">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 1</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/Manawari.jpg" alt="Manawari Temple">
+                    </div>
+                    <div class="item-info">
+                        <h4>Manawari Temple</h4>
+                        <p>Chilaw</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item" data-day="1">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 1</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/Sigiriya.jpg" alt="Sigiriya Lions Rock">
+                    </div>
+                    <div class="item-info">
+                        <h4>Sigiriya Lions Rock</h4>
+                        <p>Ancient Fortress</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item" data-day="2">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 2</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/koneswaram.jpg" alt="Thirukoneswaram Kovil">
+                    </div>
+                    <div class="item-info">
+                        <h4>Thirukoneswaram Kovil</h4>
+                        <p>Trincomalee</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item" data-day="2">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 2</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/Kanniya.jpg" alt="Kanniya Hot Springs">
+                    </div>
+                    <div class="item-info">
+                        <h4>Kanniya Hot Springs</h4>
+                        <p>Trincomalee</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item" data-day="3">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 3</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/Shree.jpg" alt="Shree Bhakta Hanuman">
+                    </div>
+                    <div class="item-info">
+                        <h4>Shree Bhakta Hanuman</h4>
+                        <p>Nuwara Eliya</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item" data-day="3">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 3</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/Tea.jpg" alt="Tea Plantation">
+                    </div>
+                    <div class="item-info">
+                        <h4>Tea Plantation</h4>
+                        <p>Ramboda</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item" data-day="4">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 4</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/Temple.jpg" alt="Divurumpola Temple">
+                    </div>
+                    <div class="item-info">
+                        <h4>Divurumpola Temple</h4>
+                        <p>Welimada</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item" data-day="4">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 4</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/Cave.jpg" alt="Ravana Cave">
+                    </div>
+                    <div class="item-info">
+                        <h4>Ravana Cave</h4>
+                        <p>Ella</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item" data-day="5">
+                    <div class="item-header">
+                        <div class="day-badge">DAY 5</div>
+                        <div class="item-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="image/Kelaniya.JPG" alt="Kelaniya Temple">
+                    </div>
+                    <div class="item-info">
+                        <h4>Kelaniya Temple</h4>
+                        <p>Colombo</p>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- details section -->
+    <section class="main-container">
+        <div class="newsection">
+            <h1>Ramayana Trail Itinerary - 6 Days in Sri Lanka</h1>
+            <div class="hero-badge">
+                🚗 Transport
+            </div>
+             <div class="hero-badge">
+                🏨 Hotels
+            </div>
+            <div class="hero-badge">
+                🍳 Breakfast
+            </div>
+            <div class="hero-badge">
+                🍽️ Dinner
+            </div>
+            <div class="hero-badge">
+                🎫 Tickets
+            </div>
+            <div class="hero-badge">
+                👨‍🏫 Expert Tour Guide
+            </div>
+            <div class="hero-badge">
+                ⭐ 30,000+ Travelers
+            </div>
+             <div class="hero-badge">
+                📝 2000+ Reviews
+            </div>
+
+
+            <!-- Pricing table section -->
+            <div class="pricing-section">
+                <div class="date-tabs" id="dateTabs">
+                    <button class="date-tab active" data-range="1st Aug - 31st October, 2025">1st Aug - 31st October, 2025</button>
+                    <button class="date-tab" data-range="1st Nov - 20th December 2025">1st Nov - 20th December 2025</button>
+                    <button class="date-tab" data-range="20th Dec 2025 - 10th Jan 2026">20th Dec 2025 - 10th Jan 2026</button>
+                    <button class="date-tab" data-range="11th Jan - Feb 28, 2026">11th Jan - Feb 28, 2026</button>
+                    <button class="date-tab" data-range="1st March - 31st March 2026">1st March - 31st March 2026</button>
+                </div>
+                <h3 class="pricing-heading" id="pricingHeading">Ramayana Trail Sri Lanka Prices (1st Aug - 31st October, 2025)</h3>
+                <div class="pricing-table-wrap">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Group size</th>
+                                <th>Vehicle</th>
+                                <th class="text-right">Economy <span class="small">(Per Person INR)</span></th>
+                                <th class="text-right">Premium <span class="small">(Per Person INR)</span></th>
+                                <th class="text-right">Premium Luxury <span class="small">(Per Person INR)</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Group size">8</td>
+                                <td data-label="Vehicle">HighRoof Van</td>
+                                <td data-label="Economy" class="text-right">44,000</td>
+                                <td data-label="Premium" class="text-right">66,600</td>
+                                <td data-label="Premium Luxury" class="text-right">83,600</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Group size">7</td>
+                                <td data-label="Vehicle">HighRoof Van</td>
+                                <td data-label="Economy" class="text-right">45,600</td>
+                                <td data-label="Premium" class="text-right">68,200</td>
+                                <td data-label="Premium Luxury" class="text-right">85,200</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Group size">6</td>
+                                <td data-label="Vehicle">HighRoof Van</td>
+                                <td data-label="Economy" class="text-right">47,700</td>
+                                <td data-label="Premium" class="text-right">70,300</td>
+                                <td data-label="Premium Luxury" class="text-right">87,300</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Group size">5</td>
+                                <td data-label="Vehicle">Flatroof Van</td>
+                                <td data-label="Economy" class="text-right">48,100</td>
+                                <td data-label="Premium" class="text-right">70,700</td>
+                                <td data-label="Premium Luxury" class="text-right">87,700</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Group size">4</td>
+                                <td data-label="Vehicle">Flatroof Van</td>
+                                <td data-label="Economy" class="text-right">51,900</td>
+                                <td data-label="Premium" class="text-right">74,500</td>
+                                <td data-label="Premium Luxury" class="text-right">91,500</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Group size">3</td>
+                                <td data-label="Vehicle">Large Comfortable Car/ Flat Roof Van</td>
+                                <td data-label="Economy" class="text-right">55,700</td>
+                                <td data-label="Premium" class="text-right">78,400</td>
+                                <td data-label="Premium Luxury" class="text-right">95,300</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Group size">2</td>
+                                <td data-label="Vehicle">Large Comfortable Car</td>
+                                <td data-label="Economy" class="text-right">66,500</td>
+                                <td data-label="Premium" class="text-right">89,100</td>
+                                <td data-label="Premium Luxury" class="text-right">106,100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Package Info -->
+     <section>
+        <div class="icontainer">
+            <div class="card">
+                <h2>✅ Inclusions</h2>
+                    <ul>
+                        <li>Entrance Fees Included for all sites</li>
+                        <li>Breakfast and Dinner Included</li>
+                        <li>Trusted licensed tour guide with Ramayana expertise</li>
+                     </ul>
+            </div>
+
+            <!-- Exclusions -->
+            <div class="card">
+                 <h2>❌ Exclusions</h2>
+                    <ul>
+                        <li>Lunch not included</li>
+                        <li>Puja material not included</li>
+                         <li>Flights and visas not included</li>
+                     </ul>
+                    <p class="note">* Please notify us in advance if you plan to attend a puja to verify timings in advance</p>
+            </div>
+
+            <!-- Accommodation -->
+            <div class="card">
+                <h2>🏨 Accommodation Types</h2>
+                    <ul>
+                        <li><strong>Economy:</strong> Affordable 3-Star Hotels</li>
+                        <li><strong>Premium:</strong> 3-4 Star Premium Hotels</li>
+                        <li><strong>Premium Luxury:</strong> 4-5 Star Premium Luxury Hotels</li>
+                    </ul>
+                    <p class="note">Prices are based on Double Rooms (2 adults) twin-sharing and Triple Rooms (3 adults). Extra charges may apply for children under 12 years.</p>
+            </div>
+
+             <!-- Vehicle Types -->
+            <div class="card">
+                <h2>🚐 Vehicle Types</h2>
+                    <ul>
+                        <li><strong>Large Comfortable Car:</strong> Honda Fit Shuttle, Toyota Corolla, Prius, Allion, etc.</li>
+                        <li><strong>Flat Roof Van:</strong> Toyota HiACE SuperGL, Nissan Caravan (6 seats + baggage)</li>
+                        <li><strong>High Roof Van:</strong> Toyota HiACE SuperGL High Roof (9 seats + baggage)</li>
+                    </ul>
+                    <p class="note">For more than 9 members, luxury buses (16–40 members) are available.</p>
+            </div>
+
+            <!-- Payment Terms -->
+            <div class="card">
+                <h2>💳 Payment Terms</h2>
+                    <p>Full payment must be made in advance for a confirmed reservation.</p>
+                        <ul>
+                            <li>14 working days in advance: <strong>100% refund</strong></li>
+                            <li>10 working days in advance: <strong>50% refund</strong></li>
+                            <li>5 working days in advance: <strong>20% refund</strong></li>
+                            <li>Less than 5 working days: <strong>10% refund</strong></li>
+                        </ul>
+                    <p class="note">* Bank Transfers are not refundable</p>
+             </div>
+
+             <div class="card">
+                <h2>❓ FAQ</h2>
+                    <div class="faq">
+                        <h3>Can we change the itinerary?</h3>
+                        <p>Yes, we can create a custom plan if you have specific requests. Current plan is optimized for the best 6-day Ramayana experience.</p>
+                    </div>
+                    <div class="faq">
+                        <h3>Can we add more passengers?</h3>
+                        <p>Yes, depending on group size. Contact us for extra costs or modifications.</p>
+                    </div>
+                    <div class="faq">
+                        <h3>Can we change the tour dates?</h3>
+                        <p>We will do our best, but changes depend on hotel and guide availability.</p>
+                    </div>
+                    <div class="faq">
+                        <h3>Can we pay in installments?</h3>
+                        <p>No, full payment is required at the time of booking.</p>
+                    </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- infor section -->
+     <section>
+        <div class="dcontainer">
+    <!-- Day 1 Card -->
+    <div class="day-card">
+      <div class="day-header">
+        <h2>Day 1: Ancient Legends and Majestic Vistas (Airport/Negombo - Chilaw - Sigiriya - Dambulla)</h2>
+        <button class="toggle-btn">▼</button>
+      </div>
+      <div class="day-content">
+        <p><strong>Highlights:</strong> Manawari Temple (Ramayana Trail Site), Sigiriya Rock Fortress (UNESCO World Heritage Site)</p>
+        <p><strong>Morning:</strong> Pick-up from Airport or Negombo. Complimentary breakfast, then head to <span class="highlight">Manawari Temple</span> in Chilaw.</p>
+        <h3>A Note on the Manawari Temple Visit:</h3>
+        <p>A puja is a wonderful opportunity to immerse yourself in local culture and religious practices. Please let us know in advance if you plan to attend the puja.</p>
+        <p><strong>Afternoon:</strong> Visit the iconic <span class="highlight">Sigiriya Rock Fortress</span>, a marvel of ancient engineering and art with breathtaking views.</p>
+        <h3>Preparing for Your Sigiriya Rock Fortress Visit:</h3>
+        <ul>
+          <li>Wear a hat with a chin strap or cap.</li>
+          <li>Wear comfortable shoes with good grip.</li>
+          <li>Bring a light jacket or windbreaker.</li>
+          <li>Carry a water bottle.</li>
+          <li>Keep belongings secure near edges.</li>
+        </ul>
+        <p><strong>Evening:</strong> Check-in to your hotel in Dambulla and enjoy a delicious dinner.</p>
+        <h3>Meals Included:</h3>
+        <ul>
+          <li>Breakfast at hotel.</li>
+          <li>Dinner at hotel (buffet or à la carte).</li>
+          <li>Vegetarian options available.</li>
+        </ul>
+
+        <!-- Schedule Card -->
+        <div class="schedule-card">
+          <h3>📅 Schedule for Day 1:</h3>
+          <ul>
+            <li><span class="time">7:00 AM – 7:45 AM</span>: Pick-up with breakfast</li>
+            <li><span class="time">8:00 AM – 9:30 AM</span>: Travel to Chilaw</li>
+            <li><span class="time">9:30 AM – 11:30 AM</span>: Visit <strong>Manawari Temple</strong> & puja</li>
+            <li><span class="time">11:30 AM – 1:00 PM</span>: Travel to Dambulla</li>
+            <li><span class="time">1:00 PM – 2:00 PM</span>: Lunch in Dambulla</li>
+            <li><span class="time">2:00 PM – 6:00 PM</span>: Explore <strong>Sigiriya Rock Fortress</strong></li>
+            <li><span class="time">6:00 PM</span>: Hotel check-in</li>
+            <li><span class="time">7:30 PM – 9:30 PM</span>: Dinner at hotel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <h2>Day 2: Dambulla to Trincomalee</h2>
+        <button class="toggle-btn">▼</button>
+      </div>
+      <div class="day-content">
+        <p><strong>Highlights:</strong> Thirukoneswaram Kovil, Kanniya Hot Springs</p>
+
+        <p><strong>Morning:</strong> Scenic journey from Dambulla to Trincomalee. Visit <span class="highlight">Thirukoneswaram Kovil</span>, dedicated to Lord Shiva, dramatically situated on a cliff.</p>
+
+        <h3>A Note on Temple Etiquette:</h3>
+        <p>Please dress respectfully, covering shoulders and knees. Footwear must be removed before entering the temple grounds.</p>
+
+        <p><strong>Afternoon:</strong> Visit <span class="highlight">Kanniya Hot Springs</span>. Famous wells believed to be created by Ravana’s trident strike, offering relaxation and reflection.</p>
+
+        <h3>Preparing for Your Kanniya Hot Springs Visit:</h3>
+        <ul>
+          <li>Bring a small hand towel.</li>
+          <li>Wear comfortable, easy-to-remove footwear.</li>
+          <li>Stay hydrated.</li>
+        </ul>
+
+        <p><strong>Evening:</strong> Return to your hotel in Dambulla. Enjoy dinner and relax.</p>
+
+        <h3>Meals Included:</h3>
+        <ul>
+          <li>Breakfast at hotel.</li>
+          <li>Dinner at hotel (buffet or à la carte).</li>
+          <li>Vegetarian options available.</li>
+        </ul>
+
+        <!-- Schedule Card -->
+        <div class="schedule-card">
+          <h3>📅 Schedule for Day 2:</h3>
+          <ul>
+            <li><span class="time">7:00 AM – 8:00 AM</span>: Breakfast at hotel</li>
+            <li><span class="time">8:00 AM – 11:00 AM</span>: Travel to <strong>Thirukoneswaram Kovil</strong></li>
+            <li><span class="time">11:00 AM – 1:00 PM</span>: Explore temple & puja</li>
+            <li><span class="time">1:00 PM – 2:00 PM</span>: Lunch break</li>
+            <li><span class="time">2:00 PM – 2:30 PM</span>: Visit <strong>Kanniya Hot Springs</strong></li>
+            <li><span class="time">2:30 PM – 5:00 PM</span>: Travel back to Dambulla</li>
+            <li><span class="time">5:00 PM</span>: Hotel check-in</li>
+            <li><span class="time">7:30 PM – 9:30 PM</span>: Dinner at hotel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <h2>Day 3: From the Plains to the Misty Mountains (Dambulla - Ramboda - NuwaraEliya)</h2>
+        <button class="toggle-btn">▼</button>
+      </div>
+      <div class="day-content">
+        <p><strong>Highlights:</strong> Shri Bhakta Hanuman Temple (Ramayana Trail Site), Tea Plantation & Ramboda Falls</p>
+
+        <p><strong>Morning:</strong> Your journey continues to the picturesque hill country, home to some of the most significant sites on the Ramayana trail. Our first stop is the <span class="highlight"> Shri Bhakta Hanuman Temple</span>, dedicated to Lord Shiva, dramatically situated on a cliff.</p>
+
+        <h3>A Note on Lunch & Travel Options:</h3>
+        <p>Should you prefer, we can also arrange for a late lunch with a quick shopping stop in the bustling city of Kandy, before continuing our journey to Nuwara Eliya.Should you prefer, we can also arrange for a late lunch with a quick shopping stop in the bustling city of Kandy, before continuing our journey to Nuwara Eliya.</p>
+
+        <p><strong>Afternoon:</strong> We will then continue our scenic drive to Nuwara Eliya, arriving at your hotel by the late afternoon. You will have the evening to rest and prepare for the next day's exploration of Sri Lanka's beautiful highlands.</p>
+
+        <h3>Meals Included:</h3>
+        <ul>
+          <li>Complimentary breakfast is included daily.</li>
+          <li>Dinner is included at your hotel, offering either an à la carte or buffet option.</li>
+          <li>Most of the hotels and restaurants on this tour will be offering vegetarian meals throughout your stay.</li>
+        </ul>
+
+        <!-- Schedule Card -->
+        <div class="schedule-card">
+          <h3>📅 Schedule for Day 2:</h3>
+          <ul>
+            <li><span class="time">7:00 AM – 8:00 AM</span>: Breakfast at hotel</li>
+            <li><span class="time">8:00 AM </span>: Check out from the hotel and begin travel to Ramboda.</li>
+            <li><span class="time">10:450 AM – 2:00 PM</span>: Visit the <strong>Shri Bhakta Hanuman Temple</strong></li>
+            <li><span class="time">1:00 PM – 2:00 PM - 3.30PM</span>: Lunch break (not included) followed by a complimentary visit to a tea plantation and the Ramboda Falls</li>
+            <li><span class="time">2:00 PM – 3:30 PM - 5.00PM</span>: Travel to NUwara Eliya</li>
+            <li><span class="time">5:00 PM</span>: Check into your hotel in Nuwara</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <h2>Day 4: Spiritual Trials and Mythical Caves (NuwaraEliya - Ella - NuwaraEliya)</h2>
+        <button class="toggle-btn">▼</button>
+      </div>
+      <div class="day-content">
+        <p><strong>Highlights:</strong> Divurumpola Temple (Ramayana Trail Site), Ravana Cave (Ramayana Trail Site)</p>
+        <p><strong>Morning:</strong> Your day begins with a significant pilgrimage to the <span class="highlight"> Divurumpola Temple </span>in Welimada.This site is of immense importance on the Ramayana trail as it is believed to be the location of the 'Agni Pariksha', or the Trial by Fire, which Sita underwent to prove her chastity after her rescue. Even today, the temple is a place where sacred oaths are taken, as it is believed that any false vow made here will be exposed by the power of truth, a legacy of Sita's trial. Visiting this temple offers
+         a deep sense of connection to the epic's most pivotal moments.</p>
+        <p><strong>Afternoon:</strong> We will then travel to Ella, a scenic town famous for its natural beauty and legendary connections. Here, we'll embark on a short trek to the famous.<span class="highlight">Ravana Cave</span>This cave is part of a fascinating network of natural and man-made tunnels that once served as a secret passage for King Ravana. According to local lore, this is where Ravana hid Sita, adding another layer of intrigue to the story. The hike itself is rewarding, leading to a stunning opening that reveals a breathtaking view of the surrounding landscape, providing a true sense of adventure.</p>
+        <p><strong>Evening:</strong> After a fulfilling day of historical and spiritual exploration, we will return to Nuwara Eliya for a relaxing evening at your hotel. Dinner will be served, allowing you to reflect on the legends and beauty you have experienced</p>
+        <h3>Meals Included:</h3>
+        <ul>
+          <li>Complimentary breakfast is included daily.</li>
+          <li>Dinner is included at your hotel, offering either an à la carte or buffet option.</li>
+          <li>Most of the hotels and restaurants on this tour will be offering vegetarian meals throughout your stay.</li>
+        </ul>
+
+        <!-- Schedule Card -->
+        <div class="schedule-card">
+          <h3>📅 Schedule for Day 2:</h3>
+          <ul>
+            <li><span class="time">7:00 AM – 8:00 AM</span>: Breakfast at hotel</li>
+            <li><span class="time">8:00 AM - 8.45 AM</span>: Travel from Nuwara Eliya to <strong>Divurumpola Temple</strong>.</li>
+            <li><span class="time">8:45 AM – 10:30 PM</span>: Explore <strong>Divurumpola Temple.</strong></li>
+            <li><span class="time">10:30 PM – 11:30 PM</span>:Travel to ella</li>
+            <li><span class="time">11:30 PM – 1:00 PM </span>: Trek and explore <strong>Ravana Cave</strong></li>
+            <li><span class="time">1:00 PM - 2.00PM</span>: Lunch break in Ella (not included)</li>
+            <li><span class="time">2:00 PM - 3.00PM</span>: Travel back to Nuwara Eliya.</li>
+            <li><span class="time">3.00PM</span>: Arrive back at your hotel in Nuwara Eliya.</li>
+            <li><span class="time">7:00 PM - 9.30PM</span>: Dinner at the hotel.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <h2>Day 5: Nuwara Eliya to the Capital of Legends</h2>
+        <button class="toggle-btn">▼</button>
+      </div>
+      <div class="day-content">
+        <p><strong>Highlights:</strong> Divurumpola Temple (Ramayana Trail Site), Ravana Cave (Ramayana Trail Site)</p>
+        <p><strong>Morning:</strong> Your day begins with a significant pilgrimage to the <span class="highlight"> Divurumpola Temple </span>in Welimada.This site is of immense importance on the Ramayana trail as it is believed to be the location of the 'Agni Pariksha', or the Trial by Fire, which Sita underwent to prove her chastity after her rescue. Even today, the temple is a place where sacred oaths are taken, as it is believed that any false vow made here will be exposed by the power of truth, a legacy of Sita's trial. Visiting this temple offers
+         a deep sense of connection to the epic's most pivotal moments.</p>
+        <p><strong>Afternoon:</strong> We will then travel to Ella, a scenic town famous for its natural beauty and legendary connections. Here, we'll embark on a short trek to the famous.<span class="highlight">Ravana Cave</span>This cave is part of a fascinating network of natural and man-made tunnels that once served as a secret passage for King Ravana. According to local lore, this is where Ravana hid Sita, adding another layer of intrigue to the story. The hike itself is rewarding, leading to a stunning opening that reveals a breathtaking view of the surrounding landscape, providing a true sense of adventure.</p>
+        <p><strong>Evening:</strong> After a fulfilling day of historical and spiritual exploration, we will return to Nuwara Eliya for a relaxing evening at your hotel. Dinner will be served, allowing you to reflect on the legends and beauty you have experienced</p>
+        <h3>Meals Included:</h3>
+        <ul>
+          <li>Complimentary breakfast is included daily.</li>
+          <li>Dinner is included at your hotel, offering either an à la carte or buffet option.</li>
+          <li>Most of the hotels and restaurants on this tour will be offering vegetarian meals throughout your stay.</li>
+        </ul>
+
+        <!-- Schedule Card -->
+        <div class="schedule-card">
+          <h3>📅 Schedule for Day 5:</h3>
+          <ul>
+            <li><span class="time">7:00 AM – 8:00 AM</span>: Breakfast at hotel</li>
+            <li><span class="time">8:00 AM - 8.45 AM</span>: Travel from Nuwara Eliya to <strong>Divurumpola Temple</strong>.</li>
+            <li><span class="time">8:45 AM – 10:30 PM</span>: Explore <strong>Divurumpola Temple.</strong></li>
+            <li><span class="time">10:30 PM – 11:30 PM</span>:Travel to ella</li>
+            <li><span class="time">11:30 PM – 1:00 PM </span>: Trek and explore <strong>Ravana Cave</strong></li>
+            <li><span class="time">1:00 PM - 2.00PM</span>: Lunch break in Ella (not included)</li>
+            <li><span class="time">2:00 PM - 3.00PM</span>: Travel back to Nuwara Eliya.</li>
+            <li><span class="time">3.00PM</span>: Arrive back at your hotel in Nuwara Eliya.</li>
+            <li><span class="time">7:00 PM - 9.30PM</span>: Dinner at the hotel.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <h2>Day 6: Colombo to the Airport</h2>
+        <button class="toggle-btn">▼</button>
+      </div>
+      <div class="day-content">
+        <p><strong>Highlights:</strong> Divurumpola Temple (Ramayana Trail Site), Ravana Cave (Ramayana Trail Site)</p>
+        <p><strong>Morning:</strong> Your day begins with a significant pilgrimage to the <span class="highlight"> Divurumpola Temple </span>in Welimada.This site is of immense importance on the Ramayana trail as it is believed to be the location of the 'Agni Pariksha', or the Trial by Fire, which Sita underwent to prove her chastity after her rescue. Even today, the temple is a place where sacred oaths are taken, as it is believed that any false vow made here will be exposed by the power of truth, a legacy of Sita's trial. Visiting this temple offers
+         a deep sense of connection to the epic's most pivotal moments.</p>
+        <p><strong>Afternoon:</strong> We will then travel to Ella, a scenic town famous for its natural beauty and legendary connections. Here, we'll embark on a short trek to the famous.<span class="highlight">Ravana Cave</span>This cave is part of a fascinating network of natural and man-made tunnels that once served as a secret passage for King Ravana. According to local lore, this is where Ravana hid Sita, adding another layer of intrigue to the story. The hike itself is rewarding, leading to a stunning opening that reveals a breathtaking view of the surrounding landscape, providing a true sense of adventure.</p>
+        <p><strong>Evening:</strong> After a fulfilling day of historical and spiritual exploration, we will return to Nuwara Eliya for a relaxing evening at your hotel. Dinner will be served, allowing you to reflect on the legends and beauty you have experienced</p>
+        <h3>Meals Included:</h3>
+        <ul>
+          <li>Complimentary breakfast is included daily.</li>
+          <li>Dinner is included at your hotel, offering either an à la carte or buffet option.</li>
+          <li>Most of the hotels and restaurants on this tour will be offering vegetarian meals throughout your stay.</li>
+        </ul>
+
+        <!-- Schedule Card -->
+        <div class="schedule-card">
+          <h3>📅 Schedule for Day 6:</h3>
+          <ul>
+            <li><span class="time">7:00 AM – 8:00 AM</span>: Breakfast at hotel</li>
+            <li><span class="time">8:00 AM - 8.45 AM</span>: Travel from Nuwara Eliya to <strong>Divurumpola Temple</strong>.</li>
+            <li><span class="time">8:45 AM – 10:30 PM</span>: Explore <strong>Divurumpola Temple.</strong></li>
+            <li><span class="time">10:30 PM – 11:30 PM</span>:Travel to ella</li>
+            <li><span class="time">11:30 PM – 1:00 PM </span>: Trek and explore <strong>Ravana Cave</strong></li>
+            <li><span class="time">1:00 PM - 2.00PM</span>: Lunch break in Ella (not included)</li>
+            <li><span class="time">2:00 PM - 3.00PM</span>: Travel back to Nuwara Eliya.</li>
+            <li><span class="time">3.00PM</span>: Arrive back at your hotel in Nuwara Eliya.</li>
+            <li><span class="time">7:00 PM - 9.30PM</span>: Dinner at the hotel.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+     </section>
+
+     <!-- Banner Section -->
+            <div class="modern-promo-section">
+                <div class="promo-content">
+                    <h2 class="promo-main-title">Book Your Spiritual Journey Through Sri Lanka's</h2>
+                    <h1 class="promo-highlight-title">Ramayana Trail</h1>
+                    <p class="promo-description">Experience legendary sites with comfort, safety, and a trusted driver.</p>
+                    <p class="promo-sub-text">Let LessTaxi guide you on a journey you'll never forget.</p>
+                    <div class="promo-cta-button">
+                        Get up to 25% off on selected days with <strong>RAMAYANAEARLYBIRD</strong> promocode
+                    </div>
+                </div>
+            </div>
+
+      <!-- Explore More section -->
+       <section class="explore-more-section">
+         <div class="floating-shapes">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        </div>
+
+        <div class="section excursions-section">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Explore More Excursions</h2>
+                <p class="section-subtitle animate-on-scroll">Discover sacred journeys through ancient Sri Lankan landscapes</p>
+            </div>
+            <div class="excursions-grid">
+
+                <div class="excursion-card animate-on-scroll" data-trail="1">
+                    <div class="card-badge popular">Popular</div>
+                     <div class="card-image">
+                        <div class="card-silhouette">🏛️</div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <span class="overlay-text">Most Chosen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">6 Days 5 Nights</h3>
+                        <p class="card-subtitle">Trail 01 - Classic Journey</p>
+                        <div class="card-features">
+                            <span class="feature-tag">🌅 Sunrise Views</span>
+                            <span class="feature-tag">🍃 Nature</span>
+                        </div>
+                        <button class="cta-button primary">View Details</button>
+                    </div>
+                </div>
+
+                <div class="excursion-card animate-on-scroll" data-trail="2">
+                <div class="card-badge recommended">Recommended</div>
+                <div class="card-image">
+                    <div class="card-silhouette">🛕</div>
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-text">Spiritual Focus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">6 Days 5 Nights</h3>
+                    <p class="card-subtitle">Trail 02 - Sacred Path</p>
+                    <div class="card-features">
+                        <span class="feature-tag">🙏 Temples</span>
+                        <span class="feature-tag">📿 Meditation</span>
+                    </div>
+                    <button class="cta-button primary">View Details</button>
+                </div>
+            </div>
+
+            <div class="excursion-card animate-on-scroll" data-trail="3">
+                <div class="card-badge extended">Extended</div>
+                <div class="card-image">
+                    <div class="card-silhouette">⛩️</div>
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-text">Deep Exploration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">7 Days 6 Nights</h3>
+                    <p class="card-subtitle">Trail 03 - Extended Journey</p>
+                    <div class="card-features">
+                        <span class="feature-tag">🏞️ Landscapes</span>
+                        <span class="feature-tag">🎭 Culture</span>
+                    </div>
+                    <button class="cta-button primary">View Details</button>
+                </div>
+            </div>
+
+             <div class="excursion-card animate-on-scroll" data-trail="4">
+                <div class="card-badge premium">Premium</div>
+                <div class="card-image">
+                    <div class="card-silhouette">🕌</div>
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-text">Luxury Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">8 Days 7 Nights</h3>
+                    <p class="card-subtitle">Trail 04 - Premium Journey</p>
+                    <div class="card-features">
+                        <span class="feature-tag">🏨 Luxury Stays</span>
+                        <span class="feature-tag">🍽️ Fine Dining</span>
+                    </div>
+                    <button class="cta-button primary">View Details</button>
+                </div>
+            </div>
+
+             <div class="excursion-card animate-on-scroll" data-trail="5">
+                <div class="card-badge flexible">Flexible</div>
+                <div class="card-image">
+                    <div class="card-silhouette">⚙️</div>
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-text">Your Way</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Customize Trail</h3>
+                    <p class="card-subtitle">Trail 05 - Personal Journey</p>
+                    <div class="card-features">
+                        <span class="feature-tag">🎯 Custom</span>
+                        <span class="feature-tag">📅 Flexible</span>
+                    </div>
+                    <button class="cta-button secondary">Customize Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+       </section>
+
+    <!-- Why Book With Us Section -->
+    <section class="why-book-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="why-book-title animate-on-scroll">Why Book With Us?</h2>
+                <p class="section-subtitle animate-on-scroll">Discover what makes our Ramayana Trail experience truly exceptional</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="feature-icon">⭐</div>
+                    <h3 class="feature-title">Expert Guided Tours</h3>
+                    <p class="feature-description">Led by knowledgeable guides who understand every Ramayana landmark with deep cultural insights and historical context.</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="feature-icon">🗺️</div>
+                    <h3 class="feature-title">Tailored Itineraries</h3>
+                    <p class="feature-description">Customized to suit your pace, interests, and spiritual journey preferences for a truly personal experience.</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.3s;">
+                    <div class="feature-icon">❤️</div>
+                    <h3 class="feature-title">Trusted by Devotees</h3>
+                    <p class="feature-description">Our service is recommended by hundreds of happy travelers who've experienced the spiritual transformation.</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.4s;">
+                    <div class="feature-icon">🎧</div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-description">Always available to assist you throughout your journey with dedicated customer care and local support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="brand-logo">
+                        <img src="image/Logo.png" alt="LessTaxi Logo" class="footer-logo-complete">
+                    </a>
+                    <p class="brand-tagline">THE MOST LOVED TRAVEL DEALS IN SRI LANKA</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link tiktok" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="#" class="nav-link">Terms & Conditions</a>
+                    <a href="#" class="nav-link">Privacy Policy</a>
+                    <a href="#" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="payment-methods">
+                    <h3 class="payment-title">Secure Payment Methods</h3>
+                    <div class="payment-icons">
+                        <div class="payment-icon" title="BHIM UPI">
+                            <span style="color: #ff6b35; font-weight: bold; font-size: 14px;">BHIM UPI</span>
+                        </div>
+                        <div class="payment-icon" title="Google Pay">
+                            <span style="color: #4285f4; font-weight: bold; font-size: 12px;">G Pay</span>
+                        </div>
+                        <div class="payment-icon" title="Apple Pay">
+                            <span style="color: #000; font-weight: bold; font-size: 12px;">🍎 Pay</span>
+                        </div>
+                        <div class="payment-icon" title="PhonePe">
+                            <span style="color: #5f259f; font-weight: bold; font-size: 11px;">PhonePe</span>
+                        </div>
+                        <div class="payment-icon" title="Paytm">
+                            <span style="color: #00baf2; font-weight: bold; font-size: 12px;">Paytm</span>
+                        </div>
+                        <div class="payment-icon" title="Amazon Pay">
+                            <span style="color: #ff9900; font-weight: bold; font-size: 10px;">Amazon Pay</span>
+                        </div>
+                        <div class="payment-icon" title="MobiKwik">
+                            <span style="color: #2e7d32; font-weight: bold; font-size: 10px;">MobiKwik</span>
+                        </div>
+                        <div class="payment-icon" title="Freecharge">
+                            <span style="color: #6c5ce7; font-weight: bold; font-size: 10px;">Freecharge</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © Copyright 2024 Less Taxi – Cheap Taxi Deals in Sri Lanka.
+                </div>
+                
+                <div class="company-info">
+                    Unit 46 Nest Space, 9th Floor, Orion City, Orion Towers, Orion IT Park, Colombo 09. Less Taxi Private Limited (PV00202823) Provincial Registration No. SLTDA/SQA/PRO/TA/00786
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Hotline: +94 74 036 6247</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@lesstaxi.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +94 74 036 6247</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
