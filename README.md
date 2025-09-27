@@ -35,6 +35,3 @@ A modern, responsive travel website template featuring:
 - Change colors and fonts in `styles.css`.
 - Add or remove travel cards and pricing options in `Hero.html`.
 - Extend JavaScript features in `script.js` as needed.
-
-## License
-This template is provided for personal and educational use. Commercial use requires permission.
